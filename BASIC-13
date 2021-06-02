@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+//BASIC-13
+int main(){
+    int n,m;
+    cin>>n>>m;
+    for (int i = 0; i < n; i++)
+    {
+        int position = 'A'+i;
+        int flag=0;
+        for (int j = 0; j < m; j++)
+        {
+            cout<<char(position);
+            if (position=='A')
+            {
+                flag=1;
+            }
+            if (flag)
+            {
+                position++;
+            }else{
+                position--;
+            }
+        }
+        cout<<endl;
+    }
+    //system("pause");
+    return 0;
+}

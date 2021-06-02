@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int a = 0, b = 1, c = 1, d;
+	cin >> d;
+	if (1 <= d && d <= 1000000)
+	{
+		for (int i = 0; i < d; i++)
+		{
+			c = a%10007 + b%10007;
+			a = b%10007;
+			b = c%10007;
+		}
+		cout << a;
+	}
+  retrun 0;
+}
